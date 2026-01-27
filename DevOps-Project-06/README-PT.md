@@ -97,3 +97,58 @@ Um pipeline CI/CD completo de ponta a ponta utilizando **Terraform**, **Ansible*
 - Criação do **cluster EKS** via Terraform.  
 - Instalação do `kubectl` e da AWS CLI no Jenkins Agent.  
 - Configuração das credenciais do Kubernetes usando:
+
+
+🔗 [Detalhes](https://github.com/NotHarshhaa/DevOps-Projects/blob/master/DevOps-Project-06/Steps/step10.md#L3)
+
+</details>
+
+<details>
+<summary><strong>🚀 Etapa 11: Deploy no Kubernetes</strong></summary>
+
+- Pull da imagem Docker usando secrets do Kubernetes.  
+- Deploy no cluster EKS utilizando recursos de **Deployment** e **Service**.  
+- Exposição da aplicação via LoadBalancer.  
+🔗 [Detalhes](https://github.com/NotHarshhaa/DevOps-Projects/blob/master/DevOps-Project-06/Steps/step11.md#L1)
+
+</details>
+
+<details>
+<summary><strong>📊 Etapa 12: Monitoramento (Prometheus & Grafana)</strong></summary>
+
+- Adição do repositório Helm do Prometheus.  
+- Ativação do monitoramento no cluster EKS.  
+- Alteração dos serviços do Prometheus e Grafana para `LoadBalancer` para acesso via navegador.  
+🔗 [Detalhes](https://github.com/NotHarshhaa/DevOps-Projects/blob/master/DevOps-Project-06/Steps/step12.md#L1)
+
+</details>
+
+---
+
+## 👨‍💻 Autor & Comunidade
+
+Este projeto é mantido por **[Harshhaa](https://github.com/NotHarshhaa)** 🚀
+
+### 💬 Conecte-se comigo:
+
+- 🐙 **GitHub**: [@NotHarshhaa](https://github.com/NotHarshhaa)  
+- 📝 **Blog**: [ProDevOpsGuy](https://blog.prodevopsguytech.com)  
+- 💬 **Telegram**: [Entrar na Comunidade](https://t.me/prodevopsguy)  
+- 👔 **LinkedIn**: [Harshhaa Vardhan Reddy](https://www.linkedin.com/in/harshhaa-vardhan-reddy/)
+
+---
+
+## ⭐ Apoie o Projeto
+
+Se isso foi útil para você:
+
+- ⭐ Dê uma estrela no repositório  
+- 🔁 Compartilhe com seus colegas  
+- ✅ Siga para mais conteúdos de DevOps  
+
+---
+
+## 📢 Fique Atualizado
+
+![Follow Me](https://imgur.com/2j7GSPs.png)
+
