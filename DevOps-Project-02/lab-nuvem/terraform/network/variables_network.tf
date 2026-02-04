@@ -14,18 +14,6 @@ variable "bastion_vnet_location" {
   default = "eastus"
 }
 
-variable "bastion_vnet_name" {
-  description = "Name of bastion virtual network"
-  type = string
-  default = "bastion_vnet"
-}
-
-variable "bastion_subnet_name" {
-  description = "Name of bastion subnet"
-  type = string
-  default = "bastion_subnet"
-}
-
 ################ APP #################
 
 variable "app_vnet_location" {
@@ -34,24 +22,9 @@ variable "app_vnet_location" {
   default = "eastus"
 }
 
-variable "app_vnet_name" {
-  description = "Name of app virtual network"
-  type = string
-  default = "app_vnet"
-}
+############ SUBNETES  PRIVATE #############
 
-################ NLB #################
-
-variable "nlb_subnet_name" {
-  description = "Name of nlb subnet"
-  type = string
-  default = "nlb_subnet"
-}
-
-################ NLB #################
-
-variable "natgateway_subnet_name" {
-  description = "Name of natgateway subnet"
-  type = string
-  default = "natgateway_subnet"
+variable "app_subnets" {
+  type = map(string)
+  default = { s1 = "172.32.1.0/24", s2 = "172.32.2.0/24" }
 }

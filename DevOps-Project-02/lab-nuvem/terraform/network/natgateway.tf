@@ -7,7 +7,7 @@ resource "azurerm_nat_gateway" "natgateway" {
 resource "azurerm_subnet" "natgateway_subnet" {
   name                 = "natgateway-subnet"
   resource_group_name  = var.resource_group_name
-  virtual_network_name = var.app_vnet_name
+  virtual_network_name = azurerm_virtual_network.app_vnet.name
   address_prefixes     = ["172.32.1.0/24"]
 }
 
