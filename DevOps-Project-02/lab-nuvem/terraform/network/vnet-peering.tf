@@ -2,5 +2,5 @@ resource "azurerm_virtual_network_peering" "bastion-to-app" {
   name                      = "bastion-to-app"
   resource_group_name       = var.resource_group_name
   virtual_network_name      = azurerm_virtual_network.bastion_vnet.name
-  remote_virtual_network_id = azurerm_virtual_network.app-vnet.id
+  remote_virtual_network_id = azurerm_virtual_network.app_vnet.id
 }
