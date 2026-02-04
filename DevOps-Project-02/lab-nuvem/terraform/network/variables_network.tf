@@ -26,5 +26,5 @@ variable "app_vnet_location" {
 
 variable "app_subnets" {
   type = map(string)
-  default = { s1 = "172.32.1.0/24", s2 = "172.32.2.0/24" }
+  default = { s1 = "172.32.3.0/24", s2 = "172.32.4.0/24" }
 }
