@@ -11,6 +11,9 @@ resource "azurerm_linux_virtual_machine_scale_set" "app_s1" {
     public_key = var.admin_ssh_public_key
   }
 
+  # cloud-init: download and extract site archive
+  custom_data = base64encode(templatefile("${path.module}/../bootstrap/cloud-init.tpl", { site_url = azurerm_storage_blob.site_archive.url }))
+
   network_interface {
     name    = "vmss-nic-s1"
     primary = true
@@ -51,6 +54,9 @@ resource "azurerm_linux_virtual_machine_scale_set" "app_s2" {
     username   = var.admin_user
     public_key = var.admin_ssh_public_key
   }
+
+  # cloud-init: download and extract site archive
+  custom_data = base64encode(templatefile("${path.module}/../bootstrap/cloud-init.tpl", { site_url = azurerm_storage_blob.site_archive.url }))
 
   network_interface {
     name    = "vmss-nic-s2"

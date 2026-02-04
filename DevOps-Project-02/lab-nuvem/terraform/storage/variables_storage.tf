@@ -9,12 +9,3 @@ variable "resource_group_name" {
   type        = string
   default     = "lab_project_02"
 }
-
-variable "tags" {
-  description = "Tags of the resource group"
-  type        = map(string)
-  default = {
-    environment = "dev"
-    project     = "lab_project_02"
-  }
-}
