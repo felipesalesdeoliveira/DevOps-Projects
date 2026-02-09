@@ -1,0 +1,20 @@
+# arquivos de ambiente
+.env
+.env.*
+
+# chaves
+*.pem
+*.key
+id_rsa
+id_ed25519
+
+# terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# macOS
+.DS_Store
+
+# node
+node_modules/
