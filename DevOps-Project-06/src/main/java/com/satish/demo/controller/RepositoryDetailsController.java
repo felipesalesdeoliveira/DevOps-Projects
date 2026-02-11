@@ -1,4 +1,4 @@
-package com.stalin.demo.controller;
+package com.satish.demo.controller;
 
 import java.io.IOException;
 import java.util.HashMap;
