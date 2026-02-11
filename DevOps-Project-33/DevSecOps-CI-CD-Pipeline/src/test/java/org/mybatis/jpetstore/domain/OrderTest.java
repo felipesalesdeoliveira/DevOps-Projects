@@ -55,7 +55,7 @@ class OrderTest {
 
     // then
     assertThat(order.getUsername()).isSameAs(account.getUsername());
-    assertThat(order.getOrderDate()).isBeforeOrEqualsTo(new Date());
+    assertThat(order.getOrderDate()).isBeforeOrEqualTo(new Date());
     assertThat(order.getShipAddress1()).isEqualTo(account.getAddress1());
     assertThat(order.getShipAddress2()).isEqualTo(account.getAddress2());
     assertThat(order.getShipCity()).isEqualTo(account.getCity());
